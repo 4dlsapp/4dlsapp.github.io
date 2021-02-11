@@ -21,7 +21,7 @@ function checkpath () {
     if (document.getElementById("filePath").value.replace(/.*rufc-fs.*\\FSDFS\\.*/,"processed") != "processed") {
     setTimeout(checkpath, 500);
     today = (new Date().toISOString().slice(0, 10)).replace(/^\d\d/,'').replace(/-/g,'')
-    document.getElementById("filePath").value = document.getElementById("filePath").value.replace(/C:\\fakepath\\/,atob("XFxcXHJ1ZmMtZnMwNS5jbmV0Y29udGVudC5uZXRcXEZTREZTXFxUZWNobm9sb2d5VW5pdFxcTUFSQVRcXA==") + today + "\\");
+    document.getElementById("filePath").value = document.getElementById("filePath").value.replace(/.*\\/,atob("XFxcXHJ1ZmMtZnMwNS5jbmV0Y29udGVudC5uZXRcXEZTREZTXFxUZWNobm9sb2d5VW5pdFxcTUFSQVRcXA==") + today + "\\");
     }
 }
 if (!window.showModalDialog) {
